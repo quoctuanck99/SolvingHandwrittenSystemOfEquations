@@ -1,0 +1,72 @@
+** simple \color
+.
+\documentclass{article}
+\usepackage{xcolor}
+
+\begin{document}
+\color[cmyk]{1,0,0,0}
+\color[wave]{485}
+\color{red}
+This is \textcolor{magenta}{kind of red} text.
+\end{document}
+.
+<div class="body">
+<p>This is  text.</p>
+</div>
+.
+
+
+** \color expressions
+.
+\documentclass{article}
+\usepackage{xcolor}
+
+\begin{document}
+\color{-red}
+\color{red!50}
+\color{-green!40!yellow}
+\color{--red!50!green!12.345}
+\color{red!50!green!20!blue}
+\color{foo!!+}
+\color{foo!![7]}
+\color{foo!25!red!!+++}
+\color{foo!25!red!70!green!![7]}
+
+\color{rgb:-green!40!yellow,3;green!40!yellow,2;red,1}
+\color{rgb:red,1}
+\color{cmyk:red,1;-green!25!blue!60,11.25;blue,-2}
+\end{document}
+.
+<div class="body">
+<p>This is  text.</p>
+</div>
+.
+
+
+** defining colors
+.
+\documentclass{article}
+\usepackage{xcolor}
+
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{red}{rgb/cmyk}{1,0,0/0,1,1,0}
+\definecolor{red}{hsb:rgb/cmyk}{1,0,0/0,1,1,0}
+\definecolor[named]{Black}{cmyk}{0,0,0,1}
+
+\definecolor{myblack}{named}{Black}
+
+\definecolorset{cmyk/rgb/hsb/gray}{}{}%
+ {cyan,1,0,0,0/0,1,1/.5,1,1/.7;%
+  magenta,0,1,0,0/1,0,1/.83333,1,1/.41;%
+  yellow,0,0,1,0/1,1,0/.16667,1,1/.89;%
+  olive,0,0,1,.5/.5,.5,0/.16667,1,.5/.39}
+
+
+\begin{document}
+\end{document}
+.
+<div class="body">
+<p>This is  text.</p>
+</div>
+.
