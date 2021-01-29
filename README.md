@@ -1,1 +1,1 @@
-# Computer Vision Project - AIAcademy - SolvingHandwrittenSystemOfEquations
+# Computer Vision Project - AIAcademy - Solving Handwritten System Of Equations
